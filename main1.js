@@ -1,9 +1,9 @@
 // import * as THREE from 'three'
 // import {PLYLoader} from 'three/examples/jsm/loaders/PLYLoader.js'
 // import  OrbitControls  from 'D:/working/threeStudy/node_modules/three/examples/jsm/controls/OrbitControls.js'
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.166.0/build/three.module.js';
-import { PLYLoader } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/loaders/PLYLoader.js';
-
+import * as THREE from './three.module.js';
+// import { PLYLoader } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/loaders/PLYLoader.js';
+import { PLYLoader } from './PLYLoader.js';
 const w = window.innerWidth
 const h = window.innerHeight
 
