@@ -12,12 +12,14 @@
   <script src="./anime.min.js"></script>
   <link rel="stylesheet" href="./style.css">
   <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script> -->
-  <!-- <script src="./three.min.js"></script> -->
+  <script src="./three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/loaders/PLYLoader.js"></script>
   <!-- 以上两种方式都可以 -->
 </head>
 
 <body>
-  <script type="module" src="./main1.js"></script>
+  <script type="module" src="./main1.js">
+  </script>
   <script src="./jewel1.js"></script>
   <div id="section0">
     <div id="app" class="app">
@@ -46,7 +48,8 @@
       <button id="section1_3_2" onclick="section1to2()">进入第一篇</button>
     </div>
     <div id="section1_text" class="section_text">
-      <p id="section1_text_1" style="padding: 20px 20px 7vh 20px ;"><strong>我：</strong>“我是谁？我从何处而来？又要去到何处？”我的脑海中不禁又浮现出这类虚无缥缈，却关乎人类生存本质的问题。</p>
+      <p id="section1_text_1" style="padding: 20px 20px 7vh 20px ;">
+        <strong>我：</strong>“我是谁？我从何处而来？又要去到何处？”我的脑海中不禁又浮现出这类虚无缥缈，却关乎人类生存本质的问题。</p>
       <!-- <img style="height: 10vh;" src="./public/image/cloud.png"> -->
       <img class="cloud" src="./public/image/cloud1.png">
     </div>
@@ -58,7 +61,7 @@
 
   <div id="section2">
     <div id="section2_1">
-      <p class="question" >你认为女娲是：</p>
+      <p class="question">你认为女娲是：</p>
       <!-- <div> -->
       <button onclick="section2_1()" class="onebutton">华胥之女</button>
       <button onclick="section2_1()" class="onebutton">凤鸟化身</button>

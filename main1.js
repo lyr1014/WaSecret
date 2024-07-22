@@ -1,9 +1,8 @@
-import * as THREE from 'three'
-// import GUI from '   ./node_modules/three/examples/jsm/libs/lil-gui.module.min.js'
-// import GUI from 'D:/working/threeStudy/node_modules/three/examples/jsm/libs/lil-gui.module.min.js'
-
-import {PLYLoader} from 'three/examples/jsm/loaders/PLYLoader.js'
+// import * as THREE from 'three'
+// import {PLYLoader} from 'three/examples/jsm/loaders/PLYLoader.js'
 // import  OrbitControls  from 'D:/working/threeStudy/node_modules/three/examples/jsm/controls/OrbitControls.js'
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.166.0/build/three.module.js';
+import { PLYLoader } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/loaders/PLYLoader.js';
 
 const w = window.innerWidth
 const h = window.innerHeight
@@ -51,7 +50,7 @@ spotLight.distance = 0;
 spotLight.map = textures['back2.png'];
 spotLight.castShadow = true;
 spotLight.shadow.mapSize.width = 200;
-spotLight.shadow.mapSize.height =200;
+spotLight.shadow.mapSize.height = 200;
 spotLight.shadow.camera.near = 1;
 spotLight.shadow.camera.far = 10;
 spotLight.shadow.focus = 1;
@@ -63,7 +62,7 @@ scene.add(dirLight1);
 // scene.add(lightHelper);
 
 const geometry1 = new THREE.PlaneGeometry(500, 800);
-const material1 = new THREE.MeshLambertMaterial({ color:  0x8d8d8d });
+const material1 = new THREE.MeshLambertMaterial({ color: 0x8d8d8d });
 const mesh = new THREE.Mesh(geometry1, material1);
 mesh.position.set(1, -2, 0);
 mesh.rotation.x = - Math.PI / 2;
@@ -82,7 +81,7 @@ const renderer = new THREE.WebGLRenderer({
     antialias: true
 })//渲染器
 renderer.setSize(w, h)
-renderer.setClearColor(255,0,0);
+renderer.setClearColor(255, 0, 0);
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -104,6 +103,7 @@ function animate() {
     renderer.render(scene, camera);
 
 }
+
 new PLYLoader().load('./public/image/女娲石像.ply', function (geometry) {
 
     geometry.scale(0.03, 0.03, 0.03);
