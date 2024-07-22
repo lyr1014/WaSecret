@@ -29,7 +29,7 @@ jobs:
       - name: Deploy Github Pages
         uses: crazy-max/ghaction-github-pages@v3 # 使用现成的action自动生成commit自动提交
         with:
-          build_dir: dist # 前面构建出来的静态文件目录
+          build_dir: ./dist # 前面构建出来的静态文件目录
           commit_message: "deploy: Deployed by Github Actions" # 提交信息，可选
           jekyll: false # 禁用jekyll可以防止一些特殊命名的文件无法正常访问
         env:
