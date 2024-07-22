@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta http-equiv="Content-Type" content="text/html charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,charset=utf-8,user-scalable=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>Vite App</title>
+  <!-- <script src="./anime.min.js"></script> -->
+  <script src="./node_modules/animejs/lib/anime.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script> -->
+  <script src="./three.min.js"></script>
+  <!-- 以上两种方式都可以 -->
+</head>
+
+<body>
+  <script type="module" src="/main1.js"></script>
+  <script src="/jewel1.js"></script>
+  <div id="section0">
+    <div id="app" class="app">
+    </div>
+    <button onclick="section0to1()" id="section0_1">点击开始</button>
+    <img id="section0_2" src="./public/image/title.png">
+    <!-- <div id="text1" class="text1">
+    </div>
+    <div id="background">
+      <p style="font-size: 2.5vh; line-height: 4vh; color: aliceblue; font-family: Simsun; text-align:left;">
+        你（游戏玩家）在探索自己从何而来、要去到何处？这一本质问题时，作为一个时空穿越者，闯入了上古传说时代，进入了女娲的身心，可以深入到女娲的心理活动之中、并与她交流，探索她的秘密。</p>
+      <button onclick="readyGo()"
+        style="margin-top:20vh;height: 5vh;width: 30vw;text-align: center; margin-left: 25vw;">点击出发</button>
+    </div> -->
+  </div>
+  <div id="section1">
+    <div id="section1_1">
+      <p id="section1_1_1">深夜</p>
+    </div>
+    <div id="section1_2">
+    </div>
+    <div id="section1_3">
+      <p>&nbsp;&nbsp;恭喜玩家因心中所悟得以进入时空幻境，回到上古创世之初，和人文初祖女娲相遇。此时女娲刚从混沌中诞生，请你帮助她建立自身并实现心中所想。
+        <br>&nbsp;&nbsp;现在，你已进入女娲的身心，可以深入到女娲的心理活动之中、并与她交流，探索她的秘密。
+      </p>
+      <button id="section1_3_2" onclick="section1to2()">进入第一篇</button>
+    </div>
+    <div id="section1_text" class="section_text">
+      <p id="section1_text_1" style="padding: 20px 20px 7vh 20px ;"><strong>我：</strong>“我是谁？我从何处而来？又要去到何处？”我的脑海中不禁又浮现出这类虚无缥缈，却关乎人类生存本质的问题。</p>
+      <!-- <img style="height: 10vh;" src="./public/image/cloud.png"> -->
+      <img class="cloud" src="./public/image/cloud1.png">
+    </div>
+  </div>
+
+  <audio id="ready" src="./public/audio/imready.mp3"></audio>
+  <audio id="start" src="./public/audio/start.mp3"></audio>
+  <audio id="shbf" src="./public/audio/shbf.mp3" loop="true"></audio>
+
+  <div id="section2">
+    <div id="section2_1">
+      <p class="question" >你认为女娲是：</p>
+      <!-- <div> -->
+      <button onclick="section2_1()" class="onebutton">华胥之女</button>
+      <button onclick="section2_1()" class="onebutton">凤鸟化身</button>
+      <button onclick="section2_1()" class="onebutton">地母</button>
+      <button onclick="section2_1()" class="onebutton">月神</button>
+      <button onclick="section2_1()" class="onebutton">人皇</button>
+      <!-- </div> -->
+    </div>
+    <div id="section2_2">
+      <p class="question">你认为自己与女娲的关系是：</p>
+      <!-- <div> -->
+      <button onclick="section2_2()" class="twobutton">我是女娲之后</button>
+      <button onclick="section2_2()" class="twobutton">女娲是我崇尚的帝皇/英雄</button>
+      <button onclick="section2_2()" class="twobutton">女娲是我信仰的保护神</button>
+      <button onclick="section2_2()" class="twobutton">其他</button>
+    </div>
+    <div id="section2_3">
+      <button onclick="section2to3()" class="twobutton">当然愿意！</button>
+      <button onclick="finishall()" class="twobutton">抱歉，我得醒了，再见!</button>
+    </div>
+    <div id="section2_text" class="section_text">
+      <p id="section2_text1" style="padding: 20px 20px 7vh 20px ;">
+        <strong>女娲：</strong>我茫然不知我是谁，要到往何处？
+      </p>
+      <img class="cloud" src="./public/image/cloud1.png">
+    </div>
+  </div>
+
+  <div id="section3">
+    <div id="section3_0">
+      <!-- <img id="section3_2" src="./public/image/je1.png"> -->
+      <div id="section3_1">
+
+      </div>
+      <div id="section3_2">
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
+            style="color: rgb(191,144,51);">黄色</strong>宝石!</p>
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">快乐、积极、智慧、创造力</p>
+      </div>
+    </div>
+    <div id="section3_3">
+      <p class="question">你知道哪个后世传诵的<br>女娲创造世界的事迹</p>
+      <button onclick="section3_1()" class="twobutton">一日中七十变</button>
+      <button onclick="section3_1()" class="twobutton">断鳌足支四极</button>
+      <button onclick="section3_1()" class="twobutton">抟土造人</button>
+      <button onclick="section3_1()" class="twobutton">其他</button>
+    </div>
+    <div id="section3_4">
+      <p class="question">传说中，女娲造人的方法有</p>
+      <button onclick="section3_2()" class="twobutton">和泥造人/抟土造人</button>
+      <button onclick="section3_2()" class="twobutton">用柳条蘸泥造人</button>
+      <button onclick="section3_2()" class="twobutton">用自己的血造人</button>
+      <button onclick="section3_2()" class="twobutton">剪纸造人</button>
+      <button onclick="section3_2()" class="twobutton">用神笔画人</button>
+      <button onclick="section3_2()" class="twobutton">其他</button>
+    </div>
+    <img id="section3_5" src="./public/image/nwzr1.jpg">
+    <img id="section3_6" src="./public/image/nwzr2.jpg">
+    <div id="section3_7">
+      <p id="section3_7_0">&nbsp;&nbsp;接下来，她为了帮助心爱的人们更好地生存，她将自己的泥塑手艺教给她的孩子们，还发明了许许多多有趣而实用的工艺，我见证了它们的诞生：泥塑、面塑、琉璃、陶器等等</p>
+      <button id="section3_7_1" onclick="section3to4()">下一章</button>
+      <img id="section3_7_2" src="./public/image/taoci.png">
+    </div>
+    <div id="section3_text" class="section_text">
+      <p id="section3_text1" style="padding: 20px 20px 7vh 20px ;">
+        <strong>女娲：</strong>看这一片混沌的世界！天地初分，如此广阔，但除了我、伏羲和一些初神，其他的都还在初生状态，有一些动物，但也并不能和我们交流。所以我要做些什么呢？
+      </p>
+      <img class="cloud" src="./public/image/cloud1.png">
+    </div>
+  </div>
+  <div id="section4">
+    <div id="section4_0">
+      <div id="section4_1">
+
+      </div>
+      <div id="section4_2">
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
+            style="color:rgb(116,142,138);">蓝色</strong>宝石!</p>
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">安宁、希望、开放、无限、未知与可能性</p>
+      </div>
+    </div>
+    <div id="section4_3">
+      <!-- <p style="font-size: 3vh; color: rgb(255, 255, 255);">你知道哪个后世传诵的<br>女娲创造世界的事迹</p> -->
+      <button onclick="section4_1()" class="twobutton">帮助</button>
+      <button onclick="section4_2()" class="twobutton">不帮助</button>
+    </div>
+    <img id="section4_4" src="./public/image/nwzr1.jpg">
+    <img id="section4_5" src="./public/image/nwzr2.jpg">
+    <div id="section4_6">
+      <p class="question">这一情景不禁让我想起了哪些姻缘物与女娲相关：</p>
+      <button onclick="section4_3()" class="twobutton">三生石</button>
+      <button onclick="section4_3()" class="twobutton">三生决</button>
+      <button onclick="section4_3()" class="twobutton">姻缘线</button>
+      <button onclick="section4_3()" class="twobutton">宝莲灯</button>
+      <button onclick="section4_3()" class="twobutton">以上都是</button>
+      <button onclick="section4_3()" class="twobutton">不知道</button>
+    </div>
+    <div id="section4_text" class="section_text">
+      <p id="section4_text1" style="padding: 20px 20px 7vh 20px ;">
+        <strong>女娲：</strong>我已经将自己的手艺都教给了人们，她们也学会了如何独立存活于世，可以自己根据新的情况来创造新的事物，不断应对变迁的世事。
+      </p>
+      <img class="cloud" src="./public/image/cloud1.png">
+    </div>
+  </div>
+  <div id="section5">
+    <div id="section5_0">
+      <div id="section5_1">
+
+      </div>
+      <div id="section5_2">
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
+            style="color:rgb(102,110,65);">绿色</strong>宝石!</p>
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">健康、真实、自然、可持续、生机与绵延</p>
+      </div>
+    </div>
+    <div id="section5_3">
+      <button onclick="section5_1()" class="twobutton">听</button>
+      <button onclick="section5_2()" class="twobutton">不听</button>
+    </div>
+    <div id="section5_4">
+      <button onclick="section5_3()" class="twobutton">认同</button>
+      <button onclick="section5_3()" class="twobutton">不认同</button>
+      <button onclick="section5_3()" class="twobutton">不知道</button>
+    </div>
+    <div id="section5_text" class="section_text">
+      <p id="section5_text1" style="padding: 20px 20px 7vh 20px ;">
+        <strong>女娲：</strong>我与我的夫君一同创造了这美妙的音乐，让我的发明更多乐器，这样“人”能有礼可依，有俗可循！让这个世界变得更有秩序。一起来听吧！
+      </p>
+      <img class="cloud" src="./public/image/cloud1.png">
+    </div>
+  </div>
+
+  <div id="section6">
+    <div id="section6_0">
+      <div id="section6_1">
+
+      </div>
+      <div id="section6_2">
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
+            style="color:rgb(192,55,26);">红色</strong>宝石!</p>
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">生生不息</p>
+      </div>
+    </div>
+    <img id="section6_3" src="./public/image/back2.png">
+    <div id="section6_4">
+      <button onclick="section6_1()" class="twobutton">我愿意</button>
+      <button onclick="section6_2()" class="twobutton">我不愿意</button>
+    </div>
+    <div id="section6_5">
+      <button onclick="section6_3()" class="twobutton">并肩同行</button>
+      <button onclick="section6_4()" class="twobutton">放弃同行</button>
+    </div>
+    <div id="section6_text" class="section_text">
+      <p id="section6_text1" style="padding: 20px 20px 7vh 20px ;">
+        <strong>女娲：</strong>真希望这世界一直如此！
+      </p>
+      <img class="cloud" src="./public/image/cloud1.png">
+    </div>
+  </div>
+
+  <div id="section7">
+    <div id="section7_0">
+      <div id="section7_1">
+
+      </div>
+      <div id="section7_2">
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
+            style="color:rgb(53, 48, 47);">黑色</strong>宝石!</p>
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">战胜困境、邪恶与破坏力</p>
+      </div>
+    </div>
+    <div id="section7_text" class="section_text">
+      <p id="section7_text1" style="padding: 20px 20px 7vh 20px ;">
+        我将我自己也植入了“人”中，
+        我也一直都在你的身心里！
+      </p>
+      <img class="cloud" src="./public/image/cloud1.png">
+    </div>
+  </div>
+
+  <script src="./change.js"></script>
+
+</body>
+
+</html>
