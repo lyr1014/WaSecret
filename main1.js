@@ -34,11 +34,11 @@ const textures = { none: null };
 
 // for (let i = 0; i < filenames.length; i++) {
 //     const filename = filenames[i];
-const texture = loader.load('back2.png');
+const texture = loader.load('nwback2.jpg');
 texture.minFilter = THREE.LinearFilter;
 texture.magFilter = THREE.LinearFilter;
 texture.colorSpace = THREE.SRGBColorSpace;
-textures['back2.png'] = texture;
+textures['nwback2.jpg'] = texture;
 // }
 
 var spotLight = new THREE.SpotLight(0xffffff, 100);
@@ -47,7 +47,7 @@ spotLight.angle = Math.PI / 8;
 spotLight.penumbra = 1;
 spotLight.decay = 2;
 spotLight.distance = 0;
-spotLight.map = textures['back2.png'];
+spotLight.map = textures['nwback2.jpg'];
 spotLight.castShadow = true;
 spotLight.shadow.mapSize.width = 200;
 spotLight.shadow.mapSize.height = 200;
