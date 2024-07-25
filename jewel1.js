@@ -60,4 +60,7 @@ jewel=function(jewelcolor,jeweldiv){
     }
     animate()
     document.getElementById(jeweldiv).append(renderer.domElement)
+    document.getElementById("jewelbgm").play();
+    document.getElementById("jewelbgm").volum=1;
+    document.getElementById("allbgm").volum=0.4;
 }

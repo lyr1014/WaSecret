@@ -5,12 +5,13 @@
 //   document.getElementById("section1").style.display = "block";
 //   section1();
 // }
-startGo = function () {
-  document.getElementById("start").play();
-}
+// startGo = function () {
+  // document.getElementById("start").play();
+// }
 section0to1 = function () {
   document.getElementById("section0").style.display = "none";
   document.getElementById("section1").style.display = "block";
+  document.getElementById("allbgm").play();
   section1()
 }
 section1to2 = function () {
@@ -224,6 +225,9 @@ section2_2 = function () {
 
 section3 = function () {
   jewel('rgb(198,155,89)','section3_1')
+  setTimeout(function () {
+    document.getElementById("allbgm").volum=0.8;
+  },3000)
   anime({
     targets: "#section3_0",
     opacity: [1, 0],
@@ -315,6 +319,9 @@ section3_2=function(){
 
 section4 = function () {
   jewel('rgb(116,142,138)','section4_1')
+  setTimeout(function () {
+    document.getElementById("allbgm").volum=0.8;
+  },3000)
   anime({
     targets: "#section4_0",
     opacity: [1, 0],
@@ -425,6 +432,9 @@ section4_3=function(){
 
 section5 = function () {
   jewel('rgb(102,110,65)','section5_1')
+  setTimeout(function () {
+    document.getElementById("allbgm").volum=0.8;
+  },3000)
   anime({
     targets: "#section5_0",
     opacity: [1, 0],
@@ -481,6 +491,9 @@ section5_2=function(){
 }
 section6=function(){
   jewel('rgb(192,55,26)','section6_1')
+  setTimeout(function () {
+    document.getElementById("allbgm").volum=0.8;
+  },3000)
   anime({
     targets: "#section6_0",
     opacity: [1, 0],
@@ -538,6 +551,9 @@ section7=function(){
   document.getElementById("section6").style.display = "none";
   document.getElementById("section7").style.display = "block";
   jewel('rgb(53, 48, 47)','section7_1')
+  setTimeout(function () {
+    document.getElementById("allbgm").volum=0.8;
+  },3000)
   anime({
     targets: "#section7_0",
     opacity: [1, 0],
@@ -556,4 +572,7 @@ section7=function(){
 finishall = function () {
    
 }
-section0()
+
+// window.onload = function () {
+  section0()
+// }
