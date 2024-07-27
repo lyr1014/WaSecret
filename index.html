@@ -13,12 +13,12 @@
   <link rel="stylesheet" href="./style.css">
   <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script> -->
   <script src="./three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/loaders/PLYLoader.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/loaders/PLYLoader.js"></script> -->
   <!-- 以上两种方式都可以 -->
 </head>
 
 <body>
-  <script type="module" src="./main1.js">
+  <!-- <script type="module" src="./main1.js"> -->
   </script>
   <script src="./jewel1.js"></script>
   <div id="section0">
@@ -37,7 +37,7 @@
   </div>
   <div id="section1">
     <div id="section1_1">
-      <p id="section1_1_1">深夜</p>
+      <p id="section1_1_1">深夜，经过一整天的忙碌后，我终于可以躺在温暖的床铺上，享受真正属于自己的时间，但是精神却放松不下来，迟迟难以入睡。</p>
     </div>
     <div id="section1_2">
     </div>
@@ -47,9 +47,10 @@
       </p>
       <button id="section1_3_2" onclick="section1to2()">进入第一篇</button>
     </div>
+    <img id="section1_4" src="./public/image/nwback11.png">
     <div id="section1_text" class="section_text">
       <p id="section1_text_1" style="padding: 20px 20px 7vh 20px ;">
-        <strong>我：</strong>“我是谁？我从何处而来？又要去到何处？”我的脑海中不禁又浮现出这类虚无缥缈，却关乎人类生存本质的问题。</p>
+        <strong>我：</strong>到底什么时候才可以得到答案呢？</p>
       <!-- <img style="height: 10vh;" src="./public/image/cloud.png"> -->
       <img class="cloud" src="./public/image/cloud1.png">
     </div>
@@ -70,9 +71,9 @@
       <button onclick="section2_1()" class="onebutton">月神</button>
       <button onclick="section2_1()" class="onebutton">人皇</button>
       <!-- </div> -->
-    </div>
+    </div> 
     <div id="section2_2">
-      <p class="question">你认为自己与女娲的关系是：</p>
+      <p class="question">我与女娲的关系是：</p>
       <!-- <div> -->
       <button onclick="section2_2()" class="twobutton">我是女娲之后</button>
       <button onclick="section2_2()" class="twobutton">女娲是我崇尚的帝皇/英雄</button>
@@ -85,7 +86,7 @@
     </div>
     <div id="section2_text" class="section_text">
       <p id="section2_text1" style="padding: 20px 20px 7vh 20px ;">
-        <strong>女娲：</strong>我茫然不知我是谁，要到往何处？
+        <strong>女娲：</strong>我是谁，要去往何处？
       </p>
       <img class="cloud" src="./public/image/cloud1.png">
     </div>
@@ -97,14 +98,18 @@
       <div id="section3_1">
 
       </div>
-      <div id="section3_2">
-        <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
+      <div id="section3_2" class="section_text" style="top:0" >
+        <!-- <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
             style="color: rgb(191,144,51);">黄色</strong>宝石!</p>
-        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">快乐、积极、智慧、创造力</p>
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">快乐、积极、智慧、创造力</p> -->
+        <p><strong style="color: #c59b5a;font-size: 2.5vh;">恭喜你!</strong><br>获得第一块宝石——黄色的“自觉”之石。在你的帮助下，女娲明确了自己的身份，黄色代表勇敢、积极与智慧，希望你有更多的勇气去探索自我。
+          现在，世界仍处于诞生之初，女娲想要发挥自己的力量，为世界带来改变，请你继续和女娲同行。
+        </p>
       </div>
+      <button id="section3_0_3" class="jewelbutton"  onclick="section3_0()">进入下一章</button>
     </div>
     <div id="section3_3">
-      <p class="question">你知道哪个后世传诵的<br>女娲创造世界的事迹</p>
+      <p class="question">女娲创造世界的事迹有哪些？</p>
       <button onclick="section3_1()" class="twobutton">一日中七十变</button>
       <button onclick="section3_1()" class="twobutton">断鳌足支四极</button>
       <button onclick="section3_1()" class="twobutton">抟土造人</button>
@@ -119,16 +124,29 @@
       <button onclick="section3_2()" class="twobutton">用神笔画人</button>
       <button onclick="section3_2()" class="twobutton">其他</button>
     </div>
-    <img id="section3_5" src="./public/image/nwzr1.jpg">
-    <img id="section3_6" src="./public/image/nwzr2.jpg">
+    <img id="section3_5" src="./public/image/nwback3.jpg">
+    <img id="section3_6" src="./public/image/nwback3.jpg">
+
+    <div id="section3_9" class="section_text">
+        <p>女娲来到黄河边，对着水中自己的身影，用岸边的黄土仔细捏出人形，她沉浸在自己的世界中，花了日月轮转三次的时间，才捏出了一个让自己满意的形状。只见她造了一个和她类似的女人，只是将蛇尾改为了对称而健美的双腿。她对着捏好的泥人吹了一口气，泥人就活了过来，欢快地围着她跳来跳去，口中叫着：妈妈！妈妈！
+          女娲喜极而泣，对她新诞生的人类孩子十分喜欢。她又认真造了三十五个女人，从一开始的笨拙到越来越熟练，只见她灵活的手指在一团团泥土上又捏又搓，就造出了三十六个美丽的女人。她们外貌性格各不相同，但十分和谐友爱，携手面对生活中的困境。女娲对自己的造物十分满意。
+        </p>
+    </div>
+
     <div id="section3_7">
-      <p id="section3_7_0">&nbsp;&nbsp;接下来，她为了帮助心爱的人们更好地生存，她将自己的泥塑手艺教给她的孩子们，还发明了许许多多有趣而实用的工艺，我见证了它们的诞生：泥塑、面塑、琉璃、陶器等等</p>
+      <!-- <p id="section3_7_0" calss="">&nbsp;&nbsp;接下来，她为了帮助心爱的人们更好地生存，她将自己的泥塑手艺教给她的孩子们，还发明了许许多多有趣而实用的工艺，我见证了它们的诞生：泥塑、面塑、琉璃、陶器等等</p>
       <button id="section3_7_1" onclick="section3to4()">下一章</button>
-      <img id="section3_7_2" src="./public/image/taoci.png">
+      <img id="section3_7_2" src="./public/image/taoci.png"> -->
+      <p class="question">传说中，女娲造人的方法有</p>
+      <button onclick="section3to4()" class="twobutton">泥塑、面塑等塑像手艺</button>
+      <button onclick="section3to4()" class="twobutton">制作琉璃</button>
+      <button onclick="section3to4()" class="twobutton">制作陶器</button>
+      <button onclick="section3to4()" class="twobutton">制作弓箭等武器</button>
+      <button onclick="section3to4()" class="twobutton">采桑织布</button>
     </div>
     <div id="section3_text" class="section_text">
       <p id="section3_text1" style="padding: 20px 20px 7vh 20px ;">
-        <strong>女娲：</strong>看这一片混沌的世界！天地初分，如此广阔，但除了我、伏羲和一些初神，其他的都还在初生状态，有一些动物，但也并不能和我们交流。所以我要做些什么呢？
+        <strong>女娲：</strong>天地初分，如此广阔，我要做些什么呢？
       </p>
       <img class="cloud" src="./public/image/cloud1.png">
     </div>
@@ -138,21 +156,23 @@
       <div id="section4_1">
 
       </div>
-      <div id="section4_2">
-        <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
+      <div id="section4_2" class="section_text" style="top:0">
+        <!-- <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
             style="color:rgb(116,142,138);">蓝色</strong>宝石!</p>
-        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">安宁、希望、开放、无限、未知与可能性</p>
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">安宁、希望、开放、无限、未知与可能性</p> -->
+        <p>在你的见证下，女娲造出了最初的人类，她们代表着新的希望和无限的可能。恭喜玩家获得蓝色的“自立”之石，蓝色代表希望、开放和无限，你也拥有改变世界的力量。接下来，女娲遇到了新的问题，请你和她一起想想办法吧！</p>
       </div>
+      <button id="section4_0_3" class="jewelbutton"  onclick="section4_0()">进入下一章</button>
     </div>
     <div id="section4_3">
       <!-- <p style="font-size: 3vh; color: rgb(255, 255, 255);">你知道哪个后世传诵的<br>女娲创造世界的事迹</p> -->
       <button onclick="section4_1()" class="twobutton">帮助</button>
       <button onclick="section4_2()" class="twobutton">不帮助</button>
     </div>
-    <img id="section4_4" src="./public/image/nwzr1.jpg">
-    <img id="section4_5" src="./public/image/nwzr2.jpg">
+    <img id="section4_4" src="./public/image/nwback7.jpg">
+    <img id="section4_5" src="./public/image/nwback6.jpg">
     <div id="section4_6">
-      <p class="question">这一情景不禁让我想起了哪些姻缘物与女娲相关：</p>
+      <p class="question">以下哪些人的姻缘物与女娲相关</p>
       <button onclick="section4_3()" class="twobutton">三生石</button>
       <button onclick="section4_3()" class="twobutton">三生决</button>
       <button onclick="section4_3()" class="twobutton">姻缘线</button>
@@ -162,7 +182,7 @@
     </div>
     <div id="section4_text" class="section_text">
       <p id="section4_text1" style="padding: 20px 20px 7vh 20px ;">
-        <strong>女娲：</strong>我已经将自己的手艺都教给了人们，她们也学会了如何独立存活于世，可以自己根据新的情况来创造新的事物，不断应对变迁的世事。
+        <strong>女娲：</strong>人们甚至学会了自己创造新事物，可以自力更生了。然而，时光流逝，孩子们的身体在逐渐老化。她们不能永生，总有一天会重新化作一抔黄土！她们如何繁衍，将创造的文明延续呢？
       </p>
       <img class="cloud" src="./public/image/cloud1.png">
     </div>
@@ -172,15 +192,20 @@
       <div id="section5_1">
 
       </div>
-      <div id="section5_2">
-        <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
+      <div id="section5_2" class="section_text" style="top:0">
+        <!-- <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
             style="color:rgb(102,110,65);">绿色</strong>宝石!</p>
-        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">健康、真实、自然、可持续、生机与绵延</p>
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">健康、真实、自然、可持续、生机与绵延</p> -->
+        <p>女娲面对并化解了自己的恐惧，与伏羲一起缔造婚姻，男女相互扶持，共同延续。恭喜玩家获得红色的“自爱”宝石，红色充满力量，代表真挚的感情与生生不息，祝你真诚待己，勇敢爱人。现在，人类社会已显现雏形，看女娲如何守护社会和谐。</p>
       </div>
+      <button id="section5_0_3" class="jewelbutton"  onclick="section5_0()">进入下一章</button>
     </div>
     <div id="section5_3">
-      <button onclick="section5_1()" class="twobutton">听</button>
-      <button onclick="section5_2()" class="twobutton">不听</button>
+      <p class="question">来听一听这来自万古的回响吧</p>
+      <button onclick="section5_3_1()" class="twobutton">笙簧之声</button>
+      <button onclick="section5_3_2()" class="twobutton">琴瑟之声</button>
+      <button onclick="section5_3_3()" class="twobutton">埙箫之声</button>
+      <button onclick="section5_3_4()" class="twobutton">不听</button>
     </div>
     <div id="section5_4">
       <button onclick="section5_3()" class="twobutton">认同</button>
@@ -189,7 +214,7 @@
     </div>
     <div id="section5_text" class="section_text">
       <p id="section5_text1" style="padding: 20px 20px 7vh 20px ;">
-        <strong>女娲：</strong>我与我的夫君一同创造了这美妙的音乐，让我的发明更多乐器，这样“人”能有礼可依，有俗可循！让这个世界变得更有秩序。一起来听吧！
+        <strong>女娲：</strong>人的出现让这个世界更加丰富多彩。但随着人口增长，人与人之间的摩擦增多。
       </p>
       <img class="cloud" src="./public/image/cloud1.png">
     </div>
@@ -200,11 +225,25 @@
       <div id="section6_1">
 
       </div>
-      <div id="section6_2">
-        <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
+      <div id="section6_2" class="section_text" style="top:0">
+        <!-- <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
             style="color:rgb(192,55,26);">红色</strong>宝石!</p>
-        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">生生不息</p>
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">生生不息</p> -->
+        <p>借助音乐，人们可以感悟天地，抒发情感，陶冶情操，社会礼制得以建立。恭喜玩家获得绿色的“自信”之石，绿色代表自然、规则与生机，信赖总是建立在规则之上。可是，大自然具有两面性，带给人类的不只是资源和启示，你与女娲还有未完成的使命。</p>
       </div>
+      <button id="section6_0_3" class="jewelbutton"  onclick="section6_0()">进入下一章</button>
+    </div>
+    <div id="section6_7">
+      <p class="question">传说中女娲时代的人类大灾难有</p>
+      <button onclick="section6_5()" class="twobutton">创世之后天塌地陷</button>
+      <button onclick="section6_5()" class="twobutton">天神之间的战争殃及人类</button>
+      <button onclick="section6_5()" class="twobutton">天漏</button>
+      <button onclick="section6_5()" class="twobutton">黑龙作恶</button>
+      <button onclick="section6_5()" class="twobutton">大火灭世</button>
+      <button onclick="section6_5()" class="twobutton">淹没世界的大洪水</button>
+    </div>
+    <div id="section6_8" class="section_text" style="top:0">
+      <p>共工和祝融不和，挑起战争，不想争斗间，共工将天柱撞倒，天上出现了大窟窿，大雨倾盆而下，久不停止，洪水肆意侵略着大地，人间一时哀嚎遍野。</p>
     </div>
     <img id="section6_3" src="./public/image/back2.png">
     <div id="section6_4">
@@ -217,10 +256,11 @@
     </div>
     <div id="section6_text" class="section_text">
       <p id="section6_text1" style="padding: 20px 20px 7vh 20px ;">
-        <strong>女娲：</strong>真希望这世界一直如此！
+        <strong>女娲：</strong>现在，这世界是多么美好呀，人们安居乐业，真希望它一直如此！
       </p>
       <img class="cloud" src="./public/image/cloud1.png">
     </div>
+    <img id="section6_9" src="./public/image/nwback14.png">
   </div>
 
   <div id="section7">
@@ -228,16 +268,35 @@
       <div id="section7_1">
 
       </div>
-      <div id="section7_2">
-        <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
+      <div id="section7_2" class="section_text" style="top:0">
+        <!-- <p style="color: ghostwhite; font-weight: bolder;font-size: 3vh;padding-top: 20px;">恭喜获得<strong
             style="color:rgb(53, 48, 47);">黑色</strong>宝石!</p>
-        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">战胜困境、邪恶与破坏力</p>
+        <p style="color: ghostwhite; font-weight: bolder;font-size: 2vh;padding-top: 10px;">战胜困境、邪恶与破坏力</p> -->
+        <p>你和女娲一起面对天灾，拯救了人类。恭喜玩家获得最后一块宝石——黑色的“自强”之石，它如同这个世界，充满了矛盾。在旅途中，你依靠自己的思考做出选择，和人类初民一起成长，希望你从中获取了新的力量。但是，请记住，任何力量都具有两面性，我们永远不能停止思考和进步。</p>
       </div>
+      <button id="section7_0_3" class="jewelbutton1"  onclick="section7_0()">进入补充篇章</button>
+      <button id="section7_0_4" class="jewelbutton2"  onclick="section7_1()">不进入补充篇章</button>
     </div>
+    <div id="section7_3">
+      <p class="question">人类自己造成了哪些灾难？</p>
+      <button onclick="section7_2()" class="twobutton">环境污染</button>
+      <button onclick="section7_2()" class="twobutton">战争</button>
+      <button onclick="section7_2()" class="twobutton">歧视</button>
+      <button onclick="section7_2()" class="twobutton">网络暴力</button>
+    </div>
+    <div id="section7_4" class="section_text" style="top:0">
+       <p><strong>女娲：</strong>我的孩子，我的朋友，感谢你来到我的身边，和我一起让这个世界变得更美好！请继续成长，成为自觉、自立、自爱、自信、自强的人。
+        现在，带着我的秘密，回到现实吧。未来之路充满未知和无限可能，你可以用自己的双手创造独特的人生。我永远伴着你！
+       </p>
+    </div>
+    <div id="section7_5" class="section_text" style="top:0">
+      <p>女娲的秘密<br>我将我自己植入了“人”中<br>我一直都在你的身心里！
+        
+      </p>
+   </div>
     <div id="section7_text" class="section_text">
       <p id="section7_text1" style="padding: 20px 20px 7vh 20px ;">
-        我将我自己也植入了“人”中，
-        我也一直都在你的身心里！
+        女娲娘娘，我还有一个请求！在我的时代，人类似乎遗忘了您的指引。
       </p>
       <img class="cloud" src="./public/image/cloud1.png">
     </div>

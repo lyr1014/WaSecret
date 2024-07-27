@@ -50,7 +50,7 @@ jewel=function(jewelcolor,jeweldiv){
     const clock = new THREE.Clock();
     function animate() {
         const time = clock.getElapsedTime();  //three.js 自带  是一个均匀增加的值就可以直接作为物体的旋转角度
-        cube.position.z += time * 0.01*2;
+        // cube.position.z += time * 0.01*2;
         cube.rotation.x = time*2;
         cube.rotation.y = time*2;
         // cube.position.x = Math.sin(time * 2);
