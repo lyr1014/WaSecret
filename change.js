@@ -521,7 +521,7 @@ section5_3_1=function(){
     duration: 1000,
     easing: 'easeInOutQuad'
   })
-  document.getElementById("start").play();
+  document.getElementById("sheng").play();
   setTimeout(() => {
     document.getElementById("section5_text1").innerHTML = "<strong>女娲：</strong>这些乐音代表着“人”这一生中有不同的含义。"
   },7000)
@@ -538,7 +538,7 @@ section5_3_2=function(){
     duration: 1000,
     easing: 'easeInOutQuad'
   })
-  document.getElementById("start").play();
+  document.getElementById("qing").play();
   setTimeout(() => {
     document.getElementById("section5_text1").innerHTML = "<strong>女娲：</strong>这些乐音代表着“人”这一生中有不同的含义。"
   },7000)
@@ -555,7 +555,7 @@ section5_3_3=function(){
     duration: 1000,
     easing: 'easeInOutQuad'
   })
-  document.getElementById("start").play();
+  document.getElementById("xiao").play();
   setTimeout(() => {
     document.getElementById("section5_text1").innerHTML = "<strong>女娲：</strong>这些乐音代表着“人”这一生中有不同的含义。"
   },7000)
