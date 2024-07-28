@@ -297,6 +297,7 @@ section3_1=function(){
 }
 
 section3_2=function(){
+  document.getElementById("section3").backgroundImage="url('./public/image/nwback6.jpg')"
   anime({
     targets: "#section3_4",
     opacity: [1, 0],
@@ -512,7 +513,7 @@ section5_0 = function () {
   // })
 }
 section5_3_1=function(){
-  document.getElementById("allbgm").volum=0.2;
+  document.getElementById("allbgm").pause();
   document.getElementById("section5").style.backgroundImage = "url('./public/image/nwback4.jpg')"
   anime({
     targets: "#section5_3",
@@ -529,7 +530,7 @@ section5_3_1=function(){
   },8000)
 }
 section5_3_2=function(){
-  document.getElementById("allbgm").volum=0.2;
+  document.getElementById("allbgm").pause();
   document.getElementById("section5").style.backgroundImage = "url('./public/image/nwback4.jpg')"
   anime({
     targets: "#section5_3",
@@ -546,7 +547,7 @@ section5_3_2=function(){
   },8000)
 }
 section5_3_3=function(){
-  document.getElementById("allbgm").volum=0.2;
+  document.getElementById("allbgm").pause();
   document.getElementById("section5").style.backgroundImage = "url('./public/image/nwback4.jpg')"
   anime({
     targets: "#section5_3",
@@ -563,7 +564,7 @@ section5_3_3=function(){
   },8000)
 }
 section5_3_4=function(){
-  document.getElementById("allbgm").volum=0.2;
+  document.getElementById("allbgm").pause();
   document.getElementById("section5").style.backgroundImage = "url('./public/image/nwback4.jpg')"
   anime({
     targets: "#section5_3",
@@ -595,6 +596,7 @@ section5_3_4=function(){
 //   },8000)
 // }
 section5_3=function(){
+  document.getElementById("allbgm").play();
   anime({
     targets: "#section5_4",
     opacity: [1, 0],
@@ -678,6 +680,7 @@ section6_5=function(){
   // })
 }
 section6_1=function(){
+  document.getElementById("section6_9").style.display = "block"
   document.getElementById("section6_8").style.display = "none"
   anime({
     targets: "#section6_4",
@@ -701,7 +704,6 @@ section6_3=function(){
   document.getElementById("section6_5").style.display = "none"
   document.getElementById("shbf").pause();
   //这里要换背景
-  document.getElementById("section6_9").style.display = "block"
   document.getElementById("section6_text1").innerHTML = "女娲取来神火炼化五色石，她举起光华流转的神石，奋力飞向天空。漏洞被五彩石填补，洪水退去，乌云散尽，人世重归秩序。经此一役，天与地、神与人之间的分隔越加清晰。"
   section7()
 }
