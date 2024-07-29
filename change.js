@@ -199,7 +199,7 @@ section2_2 = function () {
   })
   document.getElementById("section2_text1").innerHTML = "<strong>我：</strong>您是华夏民族的始祖母，是您孕育化生了我们和世界，但时至今日，也有些人遗忘了您的故事。"
   setTimeout(() => {
-    document.getElementById("section2_text1").innerHTML = "<strong>我：</strong>你是我的后代？我真想去看看未来我的孩子们所创造的世界！可现在，这世界仍混沌一片，我想要开辟这个世界。"
+    document.getElementById("section2_text1").innerHTML = "<strong>女娲：</strong>你是我的后代？我真想去看看未来我的孩子们所创造的世界！可现在，这世界仍混沌一片，我想要开辟这个世界。"
   }, 4000)
   setTimeout(() => {
     document.getElementById("section2_text1").innerHTML = "<strong>女娲：</strong>生于混沌，我将继承世界的“生”之活力和开拓意志，创造出美好的世界！你愿意与我同行吗？"
@@ -283,7 +283,7 @@ section3_1=function(){
     document.getElementById("section3_text1").innerHTML = "<strong>我：</strong>当然了，最神奇的事迹当属“造人”了！"
    },10000)
    setTimeout(() => {
-    document.getElementById("section3_text1").innerHTML = "<strong>我：</strong>人们怎么讲我造人的故事？"
+    document.getElementById("section3_text1").innerHTML = "<strong>女娲：</strong>人们怎么讲我造人的故事？"
    },15000)
   //  setTimeout(() => {
   //   document.getElementById("section3_text1").innerHTML = "<strong>女娲：</strong>我竟有这样的本领？我想让这世界变得充满生机、活力，欢声、笑语！"
@@ -401,7 +401,7 @@ section4_1=function(){
     document.getElementById("section4_text1").innerHTML = "<strong>女娲：</strong>但是我总害怕我的光辉被他笼罩，所以我也害怕女人终究弱于身体更强壮的男人。"
    },7000)
    setTimeout(() => {
-    document.getElementById("section4_text1").innerHTML = "<strong>女娲：</strong>现在，我知道我也散发着独特的光辉，拥有创造和守护的力量，不弱于他人！。"
+    document.getElementById("section4_text1").innerHTML = "<strong>女娲：</strong>现在，我知道我也散发着独特的光辉，拥有创造和守护的力量，不弱于他人！"
    },11000)
   //  setTimeout(() => {
   //   document.getElementById("section4_text1").innerHTML = "<strong>女娲：</strong>现在，我想去和我的兄长伏羲谈一谈，我已经学会了自立自爱，我自己也散发着闪耀的光辉，不会再害怕他了！"
